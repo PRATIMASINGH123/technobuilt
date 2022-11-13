@@ -1,0 +1,158 @@
+
+:root {
+  --black: #0b0c10;
+  --faintblack: #1f2833;
+  --faint: #c5c6c7;
+  --blue: #66fcf1;
+  --darkblue: #45a29e;
+}
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+.input-container{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem ;
+}
+.search-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+input{
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  border-radius: 3px;
+  width: 20rem;
+  box-sizing: border-box;
+  margin-right: 5px;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  
+}
+.search-btn{
+  border: 2px solid var(--blue);
+  color: black;
+  padding: 1rem;
+  width: 6rem;
+  font-weight: 900;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+button{
+  transition: all 0.25s ease;
+  border: none;
+}
+button:hover{
+
+  background: var(--blue);
+  transform: translateY(4px);
+}
+
+.card-container{
+  
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding:0 5rem;
+}
+
+.card{
+  box-shadow: 10px 10px 15px black;
+  background-color: #0b0c10;
+  border-radius: 15px;
+  width: 70%;
+  color: whitesmoke;
+  box-shadow: 10px 10px 15px black;
+  
+}
+.card img{
+  width: 100%;
+}
+.card h1{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.card .author-date
+{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.card .author-date span
+{
+  font-size: 0.8rem;
+}
+.card p{
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+.card a{
+  font-size: 0.95rem;
+  background: none;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+.loading{
+  color: whitesmoke;
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select,option
+{
+  background: white;
+  color: black;
+}
+.info{
+  padding: 1rem;
+  
+}
+
+.read-more{
+  margin-top:2% ;
+  width: 55%;
+  margin-left: 20%;
+  background: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 17px;
+  
+  font-weight: 600;
+}
+
+
+
+@media (max-width:1050px)
+{
+  .card-container {
+   
+    padding:0 2rem;
+  }
+}
+
+@media (max-width:900px)
+{
+  .card-container {
+   grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:600px)
+{
+  .card-container {
+   grid-template-columns: 1fr;
+  }
+}
